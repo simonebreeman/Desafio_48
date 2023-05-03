@@ -8,19 +8,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <h3>Criptografia</h3>
-    <input type="text" id="entrada" style="width: 400px;">
-    <br>
-    <button id="submit" style="margin-top: 5px; margin-bottom: 5px;" onclick="criptografarMensagem()">Converter mensagem!</button>
-    <br>
-    <br>
-    <textarea id="resultado" cols="30" rows="10">
-        
-    </textarea>
+    <h3>Autenticação</h3>
+    <form id="login-form">
+        <label for="username">Nome de usuário:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="submit">Login</button>
+    </form>
 
-<script src="script.js"> </script>
+    <h3>Criptografia</h3>
+    <form id="encryption-form" style="display: none;">
+        <label for="entrada">Mensagem:</label>
+        <input type="text" id="entrada" name="entrada" style="width: 400px;">
+        <br>
+        <button type="submit" id="submit" style="margin-top: 5px; margin-bottom: 5px;">Converter mensagem!</button>
+        <br>
+        <br>
+        <textarea id="resultado" name="resultado" cols="30" rows="10"></textarea>
+    </form>
+
+    <script src="script.js"> </script>
 
 </body>
 </html>
-
