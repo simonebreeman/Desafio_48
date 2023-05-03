@@ -1,74 +1,52 @@
 body {
-    background-color: #F0F8FF; /* cor de fundo */
-  }
-  
-  form {
-    margin: 0 auto; /* centraliza o formulário */
-    width: 60%; /* define a largura do formulário */
-    padding: 20px; /* adiciona um espaçamento interno */
-    background-color: #fff; /* cor de fundo do formulário */
-    border: 1px solid #ddd; /* borda */
-    border-radius: 5px; /* borda arredondada */
-    box-shadow: 0px 0px 10px #ddd; /* sombra */
-  }
-  
-  h1 {
-    text-align: center; /* centraliza o título */
-    color: #008000; /* cor do título */
-  }
-  
-  label {
-    display: block; /* ocupa uma linha inteira */
-    font-size: 16px; /* tamanho da fonte */
-    font-weight: bold; /* negrito */
-    color: #008000; /* cor do texto */
-    margin-bottom: 10px; /* espaçamento inferior */
-  }
-  
-  input[type="text"] {
-    width: 100%; /* define a largura do campo de entrada */
-    padding: 10px; /* adiciona um espaçamento interno */
-    border: 1px solid #ddd; /* borda */
-    border-radius: 5px; /* borda arredondada */
-    box-sizing: border-box; /* inclui a borda no tamanho total */
-  }
-  
-  input[type="submit"] {
-    display: block; /* ocupa uma linha inteira */
-    margin: 0 auto; /* centraliza o botão */
-    background-color: #008000; /* cor de fundo do botão */
-    color: #fff; /* cor do texto do botão */
-    padding: 10px 20px; /* adiciona um espaçamento interno */
-    border: none; /* sem borda */
-    border-radius: 5px; /* borda arredondada */
-    cursor: pointer; /* cursor de ponteiro */
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #005500; /* cor de fundo do botão ao passar o mouse */
-  }
-  
-  .loading {
-    display: none; /* inicialmente, a animação de carregamento é oculta */
-    margin: 0 auto; /* centraliza a animação */
-    width: 50px; /* define a largura */
-    height: 50px; /* define a altura */
-    border: 5px solid #008000; /* borda */
-    border-top: 5px solid #fff; /* borda superior */
-    border-radius: 50%; /* borda arredondada */
-    animation: spin 1s linear infinite; /* animação */
-  }
-  
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  .show-loading .loading {
-    display: block; /* quando a animação é exibida */
-    margin-top: 20px; /* adiciona um espaçamento superior */
-  }
+  background-color: #F2F2F2;
+}
+
+h3 {
+  text-align: center;
+  color: #009933;
+}
+
+#entrada {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #009933;
+  border-radius: 5px;
+}
+
+#submit {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #009933;
+  color: white;
+}
+
+#resultado {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #009933;
+  border-radius: 5px;
+  resize: none;
+}
+
+#loading {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#loading img {
+  height: 50px;
+  width: 50px;
+}
+
+.loading-active #loading {
+  display: block;
+ 
+}
+
